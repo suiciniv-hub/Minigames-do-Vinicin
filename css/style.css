@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Estilização do cabeçalho usado nas paginas index.html, velha.html e sudoku.html */
+body {
+    background-color: rgb(180, 204, 114);
+    margin: 0;
+    padding: 25px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+header {
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 40px;
+}
+
+header h1 {
+    font-size: 42px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+header b {
+    color: #adff2f;
+}
+
+
+
+main {
+    width: 900px;
+    max-width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Estilização das tabelas */
+/*Tabela da velha:*/
+
+.Velha table {
+    width: 35%;
+    border: 3px solid black;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.Velha td {
+    border: 3px solid black;
+    padding: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.Velha tr { 
+    border: 3px solid black;
+    padding: 5px;
+    background-color: white;
+}
+
+/*Tabela do Sudoku:*/
+.table-sudoku {
+    color: black;
+    border-collapse: collapse;
+}
+
+.table-sudoku tr {
+    border: 1px solid black;
+}
+.table-sudoku td {
+    border: 1px solid black;
+    padding: 35px;
+    font-size: 12px;
+    background-color: white;
+    cursor: pointer;
+}
+.table-sudoku tr:nth-child(3) td{
+    border-bottom: 3px solid black;
+}
+
+.table-sudoku td:nth-child(3) {
+    border-right: 3px solid black;
+}
+
+.table-sudoku tr:nth-child(6) td{
+    border-bottom: 3px solid black;
+}
+
+.table-sudoku td:nth-child(6) {
+    border-right: 3px solid black;
+}
+
+
+
+
+
+section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.Zenira {
+    padding: 8px;
+}
+
+.Jaimin {
+    padding: 8px;
+}
+
+section div {
+    background-color: green;
+    width: 300px;
+    padding: 25px;
+    border: 2px solid #efffd8;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+section div a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(51, 153, 53);
+    border-radius: 10px;
+}
+
+section div a:hover {
+    background-color: rgb(100, 172, 101);
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(2, 201, 2);
+    padding: 20px;
+    margin-top: 50px;
+}
