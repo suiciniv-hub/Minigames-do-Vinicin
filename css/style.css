@@ -95,10 +95,6 @@ main {
     border-right: 3px solid black;
 }
 
-
-
-
-
 section {
     display: flex;
     gap: 20px;
@@ -114,7 +110,7 @@ section {
     padding: 8px;
 }
 
-section div {
+.Menu div {
     background-color: green;
     width: 300px;
     padding: 25px;
@@ -127,7 +123,7 @@ a {
     color: white;
 }
 
-section div a {
+.Menu div a {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
@@ -135,7 +131,7 @@ section div a {
     border-radius: 10px;
 }
 
-section div a:hover {
+.Menu div a:hover {
     background-color: rgb(100, 172, 101);
 }
 
@@ -144,4 +140,32 @@ footer {
     background-color: rgb(2, 201, 2);
     padding: 20px;
     margin-top: 50px;
+}
+
+/* Estilização da seção de escolha de personagem */
+
+.escolherJogador1 button{    
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+.escolherJogador2 button{
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+/* Estilização do botão de iniciar o jogo da velha */
+.iniciarJogo button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    background-color:   transparent;
+    border: 2px solid green;
+    color: green;
+    border-radius: 5px;
 }

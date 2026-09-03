@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Zenira</title>
     <link rel="stylesheet" href="/css/style.css">
-    
+
 </head>
+
 <body>
     <header>
         <h1>👵 Jogo da Zenira</h1>
     </header>
     <main>
-        <section>
-            <p>Escolher personagem do jogador 1:</p>
+        <p style="color: green;"><b>Escolher personagem do jogador 1:</b></p>
+        <div class="escolherJogador1">
             <button onclick="escolherJogador1('💀')">💀</button>
-
-        </section>
+            <button onclick="escolherJogador1('🍕')">🍕</button>
+            <button onclick="escolherJogador1('👽')">👽</button>
+        </div>
+        <p style="color: green;"><b>Escolher personagem do jogador 2:</b></p>
+        <div class="escolherJogador2">
+            <button onclick="escolherJogador1('😎')">😎</button>
+            <button onclick="escolherJogador1('😶')">😶</button>
+            <button onclick="escolherJogador1('😍')">😍</button>
+        </div>
+        <div class="iniciarJogo">
+        <button onclick="iniciarJogo()"><b>Iniciar Jogo</b></button>
+        </div>
+        <p style="color: green;"><b>Jogador da vez:</b></p>
+        <br>
         <section class="Velha">
             <table>
                 <tr>
@@ -39,10 +53,11 @@
         <br>
         <a href="/index.html">⬅️ Voltar para o início</a>
     </main>
-    
+
     <footer>
         <p>MiniGames do Vinicin</p>
     </footer>
     <script src="velha.js"></script>
 </body>
+
 </html>
