@@ -20,33 +20,35 @@
             <button onclick="escolherJogador1('🍕')">🍕</button>
             <button onclick="escolherJogador1('👽')">👽</button>
         </div>
+        <p id="jogador1-escolhido">Jogador 1: nenhum</p>
         <p style="color: green;"><b>Escolher personagem do jogador 2:</b></p>
         <div class="escolherJogador2">
-            <button onclick="escolherJogador1('😎')">😎</button>
-            <button onclick="escolherJogador1('😶')">😶</button>
-            <button onclick="escolherJogador1('😍')">😍</button>
+            <button onclick="escolherJogador2('😎')">😎</button>
+            <button onclick="escolherJogador2('😶')">😶</button>
+            <button onclick="escolherJogador2('😍')">😍</button>
         </div>
+        <p id="jogador2-escolhido">Jogador 2: nenhum</p>
         <div class="iniciarJogo">
         <button onclick="iniciarJogo()"><b>Iniciar Jogo</b></button>
         </div>
-        <p style="color: green;"><b>Jogador da vez:</b></p>
+        <p style="color: green;" id="jogador-atual"><b>Jogador da vez: X</b></p>
         <br>
         <section class="Velha">
-            <table>
+            <table class="tabuleiro">
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td onclick="jogar(this)"></td>
+                    <td onclick="jogar(this)"></td>
+                    <td onclick="jogar(this)"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td onclick="jogar(this)"></td>
+                    <td onclick="jogar(this)"></td>
+                    <td onclick="jogar(this)"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td onclick="jogar(this)"></td>
+                    <td onclick="jogar(this)"></td>
+                    <td onclick="jogar(this)"></td>
                 </tr>
             </table>
         </section>
@@ -57,7 +59,7 @@
     <footer>
         <p>MiniGames do Vinicin</p>
     </footer>
-    <script src="velha.js"></script>
+    <script src="/js/velha.js"></script>
 </body>
 
 </html>

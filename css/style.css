@@ -44,16 +44,18 @@ main {
 /*Tabela da velha:*/
 
 .Velha table {
-    width: 35%;
-    border: 3px solid black;
     border-collapse: collapse;
     background-color: white;
 }
 
 .Velha td {
+    width:120px;
+    height: 120px;
     border: 3px solid black;
-    padding: 50px;
-    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 60px;
+    font-weight: bold;
     cursor: pointer;
 }
 
