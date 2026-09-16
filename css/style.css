@@ -86,8 +86,8 @@ main {
     border: 1px solid black;
 }
 
-.table-sudoku td[contenteditable= "true"] {
-    background-color: lightgreen;
+.table-sudoku td:not([contenteditable= "true"]) {
+    background-color: burlywood;
 }
 
 

@@ -29,11 +29,13 @@ const combinacoesVitoria = [
 //Escolher emoji/personagem do jogador 1
 
 function escolherJogador1(emoji) {
+    if(jogoAtivo) return;
     jogador1 = emoji;
 
     document.getElementById('jogador1-escolhido').innerText = 'Jogador 1: ' + jogador1;
 }
 function escolherJogador2(emoji) {
+    if(jogoAtivo) return;
     jogador2 = emoji;
 
     document.getElementById('jogador2-escolhido').innerText = 'Jogador 2: ' + jogador2;
@@ -88,7 +90,9 @@ function jogar(celula) {
 }
 
 function trocarJogador() {
-    jogadorAtual = (jogadorAtual === jogador1) ? jogador2 : jogador1;
+    if(jogadorAtual === jogador1){
+        jogadorAtual = jogador2;
+    } else jogadorAtual = jogador1;
     document.getElementById('jogador-atual').innerText = 'Jogador da vez: ' + jogadorAtual;
 }
 
