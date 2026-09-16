@@ -93,3 +93,11 @@ function verificarBloco(celula){
         }
         return false;
 }
+
+function zerarPartida(){
+    const celulas = document.querySelectorAll('.tabuleirosudo td:not[contenteditable:"true"]');
+
+    for(let celula of celulas){
+        celula.innerText = '';
+    }
+}
